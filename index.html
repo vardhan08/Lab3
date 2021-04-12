@@ -39,8 +39,8 @@
                     I finished my Spanish homework (It was tough.) Yes! That is right! I am taking Spanish lessons. Other than that, it was a normal day. I got boba from Gong Cha! :)
                 </p>
             
-                <ul>
-                    <b>Tasks due today</b>
+                Tasks due today
+                <ul>   
                     <li>
                         Vaccine Appointment
                     </li>
@@ -80,8 +80,8 @@
                     Time to check off another thing from my bucket list! <br> Other than that, I visited UCSD campus today. It was fun meeting my friends again. My hand is still paining!
                 </p>
     
+                Tasks due today
                 <ul>
-                    <b>Tasks due today</b>
                     <li>
                         CSE 110 Review Quiz
                     </li>
@@ -114,8 +114,8 @@
                 <summary><h4 id="Day3"> Day 3 [April 11, 2021]</h4></summary>
                 <b>How was your day? 7/10 --> Busy Day!</b>
                     <p>And here am I! <span class="fun">Making this website.</span> I gotta finish this soon! Oh no! I might miss the deadline. Did you just ask if I am enjoying making this website? Well, yeah! Kinda! Anyways, it's so cold today! Wanna know something interesting? I played tennis today! I lost :( but it was fun!</p>
+                Tasks due today
                 <ul>
-                    <b>Tasks due today</b>
                     <li>
                         Finish grading CSE 3 assignments
                     </li>
@@ -140,9 +140,7 @@
         <hr>
 
         
-        <h4>Want to know more about my song choices? There you go! (Don't judge me! lol) </h4>
-        <iframe src="https://open.spotify.com/embed/playlist/2pdTW1L7bvz9sgcj0OJclK" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+        
         <br>
         <h4>VIDEOS</h4>
         <b>Watch this video, by the way! I didn't know I could take this cool video as well haha. </b><br>
@@ -159,7 +157,7 @@
 
         <h3>ADD AN ENTRY</h3>
 
-        <form action="" method="get" class="add-an-entry">
+        <form action="entry" method="get" class="add-an-entry">
 
 
             <fieldset>
@@ -177,28 +175,28 @@
 
                 <p><b>Security Check #1: Correctly choose your two worst vegetables:</b></p>
                 <div>
-                    <input type="checkbox" id="vegetables" name="vegetables">
-                    <label for="vegetables">Onion</label>
+                    <input type="checkbox" id="onions" name="vegetables">
+                    <label for="onions">Onion</label>
                 </div>
 
 
                 <div>
-                    <input type="checkbox" id="vegetables" name="vegetables">
-                    <label for="vegetables">Spinach</label>
+                    <input type="checkbox" id="spinach" name="vegetables">
+                    <label for="spinach">Spinach</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" id="vegetables" name="vegetables">
-                    <label for="vegetables">Mushrooms</label>
+                    <input type="checkbox" id="mushrooms" name="vegetables">
+                    <label for="mushrooms">Mushrooms</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" id="vegetables" name="vegetables">
-                    <label for="vegetables">Potatoes</label>
+                    <input type="checkbox" id="potatoes" name="vegetables">
+                    <label for="potatoes">Potatoes</label>
                 </div>
 
                 <p><b>Security Check #2: Correctly choose your best boba flavors:</b></p>
-                <label for="">Choose a flavor:</label>
+                <label for="boba-choice">Choose a flavor:</label>
                 <input list="boba-flavors" id="boba-choice" name="boba-choice" />
                 <datalist id="boba-flavors">
                     <option value="Honeydew">
@@ -215,13 +213,14 @@
 
             <!---DATE-->
             <div class="add-an-entry">
-            <fieldset>
-              <label for="date"><b>Enter today's date: </b></label>
-              <input type="date" id="date" name="date"
-                
-                min="2021-01-01" max="2099-12-31" required>
+                <fieldset>
+                <label for="date"><b>Enter today's date: </b></label>
+                <input type="date" id="date" name="date"
+                    
+                    min="2021-01-01" max="2099-12-31" required>
+                </fieldset>
             </div>
-        </fieldset>
+
 
         
             
@@ -250,12 +249,13 @@
 
           
           
-          <fieldset>
+          
             <div class="add-an-entry">
-                <label for="name"><b>Describe your day in two words: </b></label>
-                <input type="text" id="day" name="day" required size="20">
+                <fieldset>
+                    <label for="day"><b>Describe your day in two words: </b></label>
+                    <input type="text" id="day" name="day" required size="20">
+                </fieldset>
             </div>
-        </fieldset>
 
 
 
@@ -266,11 +266,11 @@
                     <legend><b>Do you want to add the song for the day?</b></legend>
                     <div>   
                         <input type="radio" id="yes" name="song">
-                        <label for="radio">Yes</label>
+                        <label for="yes">Yes</label>
                     </div>
                     <div>
                     <input type="radio" id="no" name="song">
-                    <label for="radio">No</label>
+                    <label for="no">No</label>
                 </div>
                 </fieldset>
             </div>
@@ -283,13 +283,13 @@
             
             <div class="add-an-entry">
                 <fieldset>
-                <label for="story"><b>What's on your mind?</b></label>
+                    <label for="story"><b>What's on your mind?</b></label>
 
-                <textarea id="story" name="story"
-                          rows="5" cols="33">
-                </textarea>
+                    <textarea id="story" name="story"
+                            rows="5" cols="33">
+                    </textarea>
+                </fieldset>
             </div>
-        </fieldset>
 
             <hr>
 
@@ -309,10 +309,8 @@
           
     </main>
     <footer>
-        <h6>
             <div>&copy; <a href="https://vardhan08.github.io/CSE110/">Vardhan's CSE 110</a></div>
             <div>Powered by Thomas Powell @ CSE110</div>
-        </h6>
     </footer>
 </body>
 </html>
