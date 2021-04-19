@@ -1,0 +1,137 @@
+/* center align all the headings */
+h1, h2 {text-align: center;}
+
+/*setting colors*/
+h1 {background-color: rgb(0, 0, 0);}
+h2 {color: rgb(255, 17, 69); background-color:hsl(71, 100%, 50%);}
+
+* {background-color: peachpuff; color: black; }
+div {
+    color: royalblue;
+}
+
+
+/*absolute units*/ /* units of measurement for sizing and spacing your elements */
+h1 {font-size: 60px;}
+h2 {font-size: 3pc;}
+h3 {font-size: 0.2in;}
+
+/*relative units*/ /* units of measurement for sizing and spacing your elements */
+h4 {font-size: 2rem;}
+h5 {font-size: 4vmin;}
+p {font-size: 110%;}
+
+/*box models*/
+section {
+    width: 1000px;
+    border-style: solid;
+    border-color: green;
+    border-width: 0.3cm;
+    padding: 50px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+h4{
+    margin: 25px 50px 75px 100px  
+}
+
+h5 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+p{
+    margin: auto;
+}
+
+h1 {
+    border-radius: 50%;
+}
+
+p {
+    font-family: 'Antonio', sans-serif;
+}
+
+/*flex, grid*/
+ol {
+    display: block;
+    list-style: none;
+    flex: 10em;
+    flex-flow: column-reverse;
+    flex-basis: auto;
+
+}
+
+ul {
+    display: block;
+    list-style: none;
+    flex-flow: column-reverse;
+
+}
+
+/*text styling*/
+h5 {
+    text-decoration: sienna;
+}
+
+/*display, position*/
+p {display: block; position: relative;}
+h1 {display: none; position: fixed;}
+h2 {position: sticky;}
+
+/*pseudoclass*/
+a:link{
+    color: blue;
+}
+
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color:green
+}
+
+.container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }
+
+/*added media only to html*/
+
+
+.fun{
+    color: red;
+}
+
+#date{
+    color: green;
+}
+
+a[target]{
+    background-color: red;
+}
+
+section p {
+    color:green;
+}
+
+fieldset > p {
+    background-color: orange;
+}
+
+div + p {
+    background-color: yellow;
+}
+
+div ~ p {
+    color:rgb(255, 17, 69)
+}
+
+
+
